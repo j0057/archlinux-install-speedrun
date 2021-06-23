@@ -1,0 +1,7 @@
+#!/bin/bash -x
+: ${1?error: need window ID}
+L=$(xwininfo -name "$1" | awk 'NR==4{print $4}')
+T=$(xwininfo -name "$1" | awk 'NR==5{print $4}')
+H=$(xwininfo -name "$1" | awk 'NR==9{print $2}')
+W=$(xwininfo -name "$1" | awk 'NR==8{print $2}')
+exec ffmpeg -video_size ${W}x${H} -framerate 25 -f x11grab -i :0.0+${L},${T} "${2:-output.mp4}"
