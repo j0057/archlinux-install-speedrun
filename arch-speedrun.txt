@@ -10,7 +10,7 @@ mkdir /mnt/boot
 mkfs.vfat /dev/sda1
 mount !$ /mnt/boot
 
-vim /etc/pacman.conf        8j  o   ILoveCandy  Color   ParallelDownloads=10
+vim /etc/pacman.conf        8j  o   ILoveCandy  Color   ParallelDownloads=25
 
 pacstrap /mnt base linux vim
 
