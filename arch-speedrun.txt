@@ -42,4 +42,4 @@ efibootmgr  -c  -l vmlinuz-linux   -u   'rw root=/dev/sda2 initrd=initramfs-linu
 reboot
 
 root
-yes | pacman -Sy neofetch ; neofetch
+pacman -Sy neofetch <<<y ; neofetch
