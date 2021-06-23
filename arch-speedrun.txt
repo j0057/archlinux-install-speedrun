@@ -37,7 +37,7 @@ arch-chroot /mnt
 
     ^D
 
-efibootmgr -c -d /dev/sda -p 1 -l vmlinuz-linux -u 'rw root=/dev/sda2 initrd=initramfs-linux.img'
+efibootmgr  -c  -l vmlinuz-linux   -u   'rw root=/dev/sda2 initrd=initramfs-linux.img'
 
 reboot
 
