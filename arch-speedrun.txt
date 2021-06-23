@@ -27,11 +27,9 @@ arch-chroot /mnt
     vim locale.gen      176j x
     locale-gen
 
-    vim locale.conf     LANG=en_US.UTF-8
-
-    vim hostname        letsgo
-
-    vim environment     G o EDITOR=vim
+    echo LANG=en_US.UTF-8   >locale.conf
+    echo letsgo             >hostname
+    echo EDITOR=vim         >>environment
 
     passwd -d root
 
