@@ -14,7 +14,7 @@ vim /etc/pacman.conf        8j  o   ILoveCandy  Color   ParallelDownloads=25
 
 pacstrap /mnt base linux vim
 
-genfstab /mnt > /mnt/etc/fstab
+genfstab /mnt >/mnt/etc/fstab
 
 cp /etc/systemd/network/20-ethernet.network /mnt/etc/systemd/system
 
