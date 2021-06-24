@@ -16,7 +16,7 @@ pacstrap /mnt base linux vim
 
 genfstab /mnt >/mnt/etc/fstab
 
-cp /etc/systemd/network/20-ethernet.network /mnt/etc/systemd/system
+cp /etc/systemd/network/20-ethernet.network /mnt/etc/systemd/network
 
 arch-chroot /mnt
 
