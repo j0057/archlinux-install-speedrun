@@ -7,6 +7,7 @@ if [ ! -f letsgo.img ]; then
 fi
 
 exec qemu-system-x86_64 \
+    -machine pc-q35-2.8 \
     -cdrom iso/archlinux-2021.06.01-x86_64.iso \
     -boot once=d \
     -drive file=letsgo.img \
